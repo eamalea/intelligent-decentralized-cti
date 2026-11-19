@@ -6,7 +6,6 @@ le Machine Learning, MITRE ATT&CK, MISP et Ethereum afin de proposer une
 validation collaborative, traçable et explicable.
 
 > **Statut :** initialisation du projet
-> **Durée prévue :** 4 à 5 semaines
 > **Périmètre :** prototype académique, non destiné à la production
 
 ## Objectifs
