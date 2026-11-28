@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node.js / Hardhat
+node_modules/
+blockchain/artifacts/
+blockchain/cache/
+blockchain/coverage/

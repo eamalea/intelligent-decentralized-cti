@@ -59,7 +59,10 @@ intelligent-decentralized-cti/
 │   └── nlp/               # Extraction, normalisation et déduplication IOC
 ├── blockchain/
 │   ├── contracts/         # Smart contracts Solidity
-│   └── test/              # Tests Hardhat des contrats
+│   ├── scripts/           # Déploiement local
+│   ├── test/              # Tests Hardhat des contrats
+│   ├── package.json       # Dépendances et commandes Hardhat
+│   └── README.md          # Règles et démarrage du module
 ├── data/
 │   ├── annotated/         # Corpus annoté et relations de référence
 │   ├── raw/
@@ -144,8 +147,19 @@ Trois organisations simulées (A, B et C) suivent le scénario :
 
 ## Développement
 
-Le projet est en phase d'initialisation. Les modules seront ajoutés par
-fonctionnalité, avec une branche dédiée et une pull request vérifiée.
+Les modules avancent par fonctionnalité, avec une branche dédiée et une pull
+request vérifiée. Le module blockchain contient le contrat MVP et ses tests.
+
+Pour lancer les tests du contrat, depuis la racine du dépôt :
+
+```powershell
+cd blockchain
+npm install
+npm test
+```
+
+Les étapes de lancement du nœud Hardhat et de déploiement local sont décrites
+dans [`blockchain/README.md`](blockchain/README.md).
 
 Les identifiants MISP, les clés privées Ethereum et les fichiers `.env` réels
 ne doivent jamais être versionnés. Copier `.env.example` vers `.env` lors de la
